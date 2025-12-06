@@ -2,7 +2,7 @@
 
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.DB, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.DB);
 
 const bookSchema = new mongoose.Schema({
   title: { type: String, required: true },
